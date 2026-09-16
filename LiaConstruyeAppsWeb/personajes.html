@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personajes Ilustres</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'Some Time Later';
+      src: url('https://cdn.jsdelivr.net/gh/skateto/sponge-bob-font@master/some_time_later.otf') format('opentype'),
+           url('https://raw.githubusercontent.com/ctrlcctrlv/some-time-later/master/Some%20Time%20Later.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
+      background-color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* HEADER ROJO CON TÍTULO */
+    .header-banner {
+      background-color: #d60d00;
+      position: relative;
+      padding: 25px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .titulo-contenedor {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Some Time Later', sans-serif;
+      line-height: 0.9;
+      text-transform: uppercase;
+      text-align: center;
+      z-index: 2;
+    }
+
+    .linea-blanca {
+      color: #ffffff;
+      font-size: 5.5rem;
+      letter-spacing: 2px;
+    }
+
+    /* DECORACIÓN ESQUINA SUPERIOR DERECHA (img11.png) */
+    .decoracion-superior-derecha {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 220px;
+      height: auto;
+      z-index: 15;
+      pointer-events: none;
+    }
+
+    /* NAVBAR VERDE */
+    .navbar {
+      background-color: #128238;
+      width: 100%;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      z-index: 10;
+    }
+
+    .nav-btn {
+      background-color: #9ecc73;
+      color: #000000;
+      border: none;
+      padding: 8px 22px;
+      border-radius: 20px;
+      font-family: 'Comic Neue', 'Comic Sans MS', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    /* SECCIÓN PRINCIPAL DE TARJETAS */
+    .contenedor-personajes {
+      max-width: 1250px;
+      margin: 50px auto 40px auto;
+      padding: 0 40px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .tarjeta-personaje {
+      border: 3.5px solid #d60d00;
+      border-radius: 35px;
+      padding: 35px 20px 20px 20px;
+      position: relative;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 520px;
+    }
+
+    .titulo-tarjeta {
+      position: absolute;
+      top: -24px;
+      background-color: #ffffff;
+      padding: 0 15px;
+      color: #295b8f;
+      font-size: 1.65rem;
+      font-weight: 700;
+      text-align: center;
+      line-height: 1.1;
+      max-width: 90%;
+    }
+
+    .texto-tarjeta {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #333333;
+      text-align: justify;
+      line-height: 1.35;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+
+    .imagen-personaje {
+      max-height: 190px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    /* DECORACIÓN ESQUINA INFERIOR IZQUIERDA (img10.png) */
+    .decoracion-inferior-izquierda {
+      position: absolute;
+      bottom: 60px;
+      left: 0;
+      width: 280px;
+      height: auto;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    /* FOOTER ROJO */
+    .footer-rojo {
+      background-color: #d60d00;
+      color: #ffffff;
+      text-align: center;
+      padding: 12px 10px;
+      width: 100%;
+      z-index: 10;
+      margin-top: auto;
+    }
+
+    .footer-rojo p {
+      margin: 2px 0;
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Imagen Esquina Superior Derecha -->
+  <img src="img11.png" alt="Decoración Tricolor Superior" class="decoracion-superior-derecha">
+
+  <header class="header-banner">
+    <div class="titulo-contenedor">
+      <span class="linea-blanca">PERSONAJES</span>
+      <span class="linea-blanca">iLUSTRES</span>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <a href="inicio.html" class="nav-btn">inicio</a>
+    <a href="historia.html" class="nav-btn">Historia</a>
+    <a href="personajes.html" class="nav-btn">Personajes</a>
+    <a href="documentos-historicos.html" class="nav-btn">Documentos Históricos</a>
+    <a href="linea-del-tiempo.html" class="nav-btn">Línea del tiempo</a>
+    <a href="datos-curiosos.html" class="nav-btn">Datos Curiosos / Interesantes</a>
+  </nav>
+
+  <main class="contenedor-personajes">
+
+    <!-- 1. Miguel Hidalgo -->
+    <div class="tarjeta-personaje">
+      <h2 class="titulo-tarjeta">Miguel Hidalgo</h2>
+      <p class="texto-tarjeta">
+        Fue un sacerdote que participó en la Conspiración de Querétaro. Es uno de los nombres clave en el proceso de Independencia de México ya que el 16 de septiembre de 1810 proclamó el conocido como "Grito de Dolores", oficializando de esta forma la lucha del pueblo por la emancipación de España. A esto se debe que Miguel Hidalgo y Costilla se apode como el "Padre de la Patria". Entre sus acciones, se encargó de promulgar decretos para la abolición de la esclavitud, así como para la devolución de tierras indígenas.
+      </p>
+      <img src="img4.png" alt="Miguel Hidalgo" class="imagen-personaje">
+    </div>
+
+    <!-- 2. José María Morelos -->
+    <div class="tarjeta-personaje">
+      <h2 class="titulo-tarjeta">José María Morelos y Pavón</h2>
+      <p class="texto-tarjeta">
+        Fue un sacerdote, militar y político cuya figura fue esencial en el proceso de independencia. Considerado como el "Siervo de la Nación", Morelos y Pavón se une a la insurrección cuando Hidalgo lo nombró lugarteniente para insurreccionar el sur. Destacó por ser un gran estratega militar, además se encargó de idear un plan de gobierno pensado para que asumiera el país tras la independencia. Uno de sus fines fue la disminución de la brecha entre la riqueza y la pobreza.
+      </p>
+      <img src="img5.png" alt="José María Morelos y Pavón" class="imagen-personaje">
+    </div>
+
+    <!-- 3. Guadalupe Victoria -->
+    <div class="tarjeta-personaje">
+      <h2 class="titulo-tarjeta">Guadalupe Victoria</h2>
+      <p class="texto-tarjeta">
+        José Miguel Ramón Adaucto Fernández y Félix, más conocido como Guadalupe Victoria, fue militar y político insurgente. Además fue el primer presidente de la República. Entre sus acciones en el proceso de Independencia de México destaca su participación en la toma de Oaxaca junto a Morelos. Este éxito le supuso ascender a General Brigadier y estuvo al mando del ejército en Veracruz.
+      </p>
+      <img src="img6.png" alt="Guadalupe Victoria" class="imagen-personaje">
+    </div>
+
+    <!-- 4. Ignacio Allende -->
+    <div class="tarjeta-personaje">
+      <h2 class="titulo-tarjeta">Ignacio Allende y Unzaga</h2>
+      <p class="texto-tarjeta">
+        Nacido en el seno de una familia acomodada, Ignacio Allende y Unzaga fue militar y capitán del ejército. Su figura destaca desde el principio de la revolución, ya que fue uno de los miembros participantes en la Conspiración de Valladolid. Más tarde, también lo hizo en Querétaro y, junto a Miguel Hidalgo y Costilla, originó el conflicto armado. Es considerado uno de los "Héroes de la Independencia" y sustituyó a Hidalgo en el mando de la insurgencia.
+      </p>
+      <img src="img7.png" alt="Ignacio Allende y Unzaga" class="imagen-personaje">
+    </div>
+
+    <!-- 5. Agustín de Iturbide -->
+    <div class="tarjeta-personaje">
+      <h2 class="titulo-tarjeta">Agustín de Iturbide</h2>
+      <p class="texto-tarjeta">
+        Fue militar y político que también ostentó el cargo de emperador de México. En un primer momento perteneció al ejército realista, aunque en el año 1821 se cambió de bando y luchó con los insurgentes. Entre sus acciones destaca la proclamación del denominado como Plan de Iguala, texto en el que exponía la declaración de país soberano e independiente a México.
+      </p>
+      <img src="img8.png" alt="Agustín de Iturbide" class="imagen-personaje">
+    </div>
+
+    <!-- 6. Josefa Ortiz -->
+    <div class="tarjeta-personaje">
+      <h2 class="titulo-tarjeta">Josefa Ortiz</h2>
+      <p class="texto-tarjeta">
+        Josefa Ortiz era la esposa del corregidor de Querétaro, fue una de las figuras participantes en la conspiración que dio lugar a la Guerra de Independencia. Participó en las reuniones secretas y gracias a ella se anticipó la revolución pues fue la encargada de avisar a Hidalgo y Allende de que habían sido descubiertos. Su decisión hizo que se diera el "Grito de independencia". Así, Josefa Ortiz es considerada una de las "heroínas de la independencia mexicana".
+      </p>
+      <img src="img9.png" alt="Josefa Ortiz" class="imagen-personaje">
+    </div>
+
+  </main>
+
+  <!-- Imagen Esquina Inferior Izquierda -->
+  <img src="img10.png" alt="Decoración Cempasúchil Inferior" class="decoracion-inferior-izquierda">
+
+  <footer class="footer-rojo">
+    <p>Lia Natalia Bretado Quiroz</p>
+    <p>24308051281111</p>
+    <p>5to J</p>
+    <p>Programacion</p>
+  </footer>
+
+</body>
+</html>

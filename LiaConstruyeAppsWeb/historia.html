@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Independencia de México</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'Some Time Later';
+      src: url('https://cdn.jsdelivr.net/gh/skateto/sponge-bob-font@master/some_time_later.otf') format('opentype'),
+           url('https://raw.githubusercontent.com/ctrlcctrlv/some-time-later/master/Some%20Time%20Later.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+    }
+
+    .header-banner {
+      background-color: #9ecc73;
+      padding: 2vh 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 24vh;
+    }
+
+    .titulo-contenedor {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Some Time Later', sans-serif;
+      line-height: 0.95;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .linea-verde, .linea-roja {
+      color: #ffffff;
+      font-size: 7.5vh;
+      letter-spacing: 2px;
+    }
+
+    .navbar {
+      background-color: #128238;
+      width: 100%;
+      height: 7vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.2vw;
+    }
+
+    .nav-btn {
+      background-color: #9ecc73;
+      color: #000000;
+      border: none;
+      padding: 0.6vh 1.4vw;
+      border-radius: 20px;
+      font-family: 'Comic Neue', 'Comic Sans MS', sans-serif;
+      font-weight: 700;
+      font-size: 2.2vh;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      white-space: nowrap;
+    }
+
+    .seccion-central {
+      height: 57vh;
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2vh 5vw;
+      overflow: hidden;
+    }
+
+    .bloque-texto {
+      max-width: 58%;
+      z-index: 2;
+    }
+
+    .texto-introduccion {
+      font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
+      font-size: 2.5vh;
+      font-weight: 700;
+      line-height: 1.35;
+      color: #333333;
+      text-align: justify;
+    }
+
+    .texto-introduccion a {
+      color: #295b8f;
+      text-decoration: underline;
+    }
+
+    .imagen-personaje {
+      position: absolute;
+      right: 1vw;
+      bottom: 0;
+      height: 52vh;
+      width: auto;
+      z-index: 1;
+    }
+
+    .footer-rojo {
+      background-color: #d60d00;
+      color: #ffffff;
+      text-align: center;
+      height: 12vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      z-index: 10;
+    }
+
+    .footer-rojo p {
+      margin: 0.2vh 0;
+      font-size: 1.7vh;
+      font-weight: 700;
+      font-family: 'Comic Neue', 'Comic Sans MS', sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header-banner">
+    <div class="titulo-contenedor">
+      <span class="linea-verde">HiSTORiA DE LA</span>
+      <span class="linea-roja">iNDEPENDENCiA</span>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <a href="inicio.html" class="nav-btn">inicio</a>
+    <a href="historia.html" class="nav-btn">Historia</a>
+    <a href="personajes.html" class="nav-btn">Personajes</a>
+    <a href="documentos-historicos.html" class="nav-btn">Documentos Históricos</a>
+    <a href="linea-del-tiempo.html" class="nav-btn">Línea del tiempo</a>
+    <a href="datos-curiosos.html" class="nav-btn">Datos Curiosos / Interesantes</a>
+  </nav>
+
+  <main class="seccion-central">
+    <div class="bloque-texto">
+      <p class="texto-introduccion">
+        La independencia de México se gestó en un contexto de desigualdad social, crisis económica y cambios políticos. La sociedad novohispana estaba dividida en estratos: españoles peninsulares, criollos, mestizos, indígenas y africanos, con gran parte de la riqueza concentrada en pocos grupos y la mayoría de la población viviendo en pobreza. Las reformas borbónicas y la ocupación francesa de España en 1808, que provocó la abdicación de Carlos IV y Fernando VII, generaron un vacío de poder y un malestar político que impulsó el movimiento independentista. El proceso comenzó el 16 de septiembre de 1810 con el Grito de Dolores, liderado por Miguel Hidalgo y Costilla, quien convocó a la población a levantarse contra el dominio español. Este primer movimiento tuvo un fuerte componente social, con participación de trabajadores, jornaleros, mineros e indígenas, y buscaba además reivindicaciones como la abolición de la esclavitud y la devolución de tierras a los pueblos originarios
+      </p>
+    </div>
+
+    <img src="img3.png" alt="Personaje Mexicano" class="imagen-personaje">
+  </main>
+
+  <footer class="footer-rojo">
+    <p>Lia Natalia Bretado Quiroz</p>
+    <p>24308051281111</p>
+    <p>5to J</p>
+    <p>Programacion</p>
+  </footer>
+
+</body>
+</html>

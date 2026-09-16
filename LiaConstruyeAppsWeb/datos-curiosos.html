@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datos Interesantes de Independencia</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'Some Time Later';
+      src: url('https://cdn.jsdelivr.net/gh/skateto/sponge-bob-font@master/some_time_later.otf') format('opentype'),
+           url('https://raw.githubusercontent.com/ctrlcctrlv/some-time-later/master/Some%20Time%20Later.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
+      background-color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* HEADER VERDE CLARO */
+    .header-banner {
+      background-color: #a2d072;
+      position: relative;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .titulo-contenedor {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Some Time Later', sans-serif;
+      line-height: 0.95;
+      text-transform: uppercase;
+      text-align: center;
+      z-index: 2;
+    }
+
+    .linea-blanca {
+      color: #ffffff;
+      font-size: 5rem;
+      letter-spacing: 2px;
+    }
+
+    /* NAVBAR VERDE OSCURO */
+    .navbar {
+      background-color: #128238;
+      width: 100%;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      z-index: 10;
+    }
+
+    .nav-btn {
+      background-color: #9ecc73;
+      color: #000000;
+      border: none;
+      padding: 8px 22px;
+      border-radius: 20px;
+      font-family: 'Comic Neue', 'Comic Sans MS', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    /* SECCIÓN PRINCIPAL DE DATOS INTERESANTES */
+    .contenedor-datos {
+      max-width: 1200px;
+      margin: 50px auto 60px auto;
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .lista-datos {
+      flex: 1;
+      list-style-type: disc;
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .lista-datos li {
+      font-size: 1.1rem;
+      color: #1b4d24;
+      line-height: 1.4;
+      text-align: justify;
+      font-weight: 700;
+    }
+
+    .contenedor-imagen {
+      flex: 0 0 350px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .imagen-estandarte {
+      max-width: 100%;
+      height: auto;
+      max-height: 420px;
+      object-fit: contain;
+    }
+
+    /* DECORACIÓN ESQUINA INFERIOR IZQUIERDA (img10.png) */
+    .decoracion-inferior-izquierda {
+      position: absolute;
+      bottom: 50px;
+      left: 0;
+      width: 280px;
+      height: auto;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    /* FOOTER ROJO */
+    .footer-rojo {
+      background-color: #d60d00;
+      color: #ffffff;
+      text-align: center;
+      padding: 12px 10px;
+      width: 100%;
+      z-index: 10;
+      margin-top: auto;
+    }
+
+    .footer-rojo p {
+      margin: 2px 0;
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header-banner">
+    <div class="titulo-contenedor">
+      <span class="linea-blanca">DATOS iNTERESANTES DE</span>
+      <span class="linea-blanca">iNDEPENDENCiA</span>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <a href="inicio.html" class="nav-btn">inicio</a>
+    <a href="historia.html" class="nav-btn">Historia</a>
+    <a href="personajes.html" class="nav-btn">Personajes</a>
+    <a href="documentos-historicos.html" class="nav-btn">Documentos Históricos</a>
+    <a href="linea-del-tiempo.html" class="nav-btn">Línea del tiempo</a>
+    <a href="datos-curiosos.html" class="nav-btn">Datos Curiosos / Interesantes</a>
+  </nav>
+
+  <main class="contenedor-datos">
+    <ul class="lista-datos">
+      <li>
+        En el Acta de Independencia firmada el 28 de septiembre de 1821, se establece que México sería reconocido como Imperio. Luego de la caída del emperador Iturbide (1823), el acta fue renovada y en lugar de decir "Imperio", se estableció el término "República". Por eso México cuenta con dos actas de independencia.
+      </li>
+      <li>
+        Ni Guerrero ni Victoria firmaron el Acta de Independencia. Los firmantes fueron los criollos cercanos a Iturbide.
+      </li>
+      <li>
+        Miguel Hidalgo no tocó la "Campana de la Independencia", quien realmente tocó la campana aquel día fue José Galván, el campanero de la parroquia, mientras Miguel Hidalgo llamaba desde la entrada de la parroquia a toda la población.
+      </li>
+      <li>
+        Hubo una guerra de vírgenes en la Independencia, por un lado la virgen de Guadalupe, enarbolada por Miguel Hidalgo, fue llamada María Insurgente, mientras que el Virrey Venegas nombró a la virgen de los Remedios, generala de sus tropas.
+      </li>
+      <li>
+        Ignacio Allende trató de envenenar a Miguel Hidalgo en varias ocasiones, después de negarse a tomar la Ciudad de México y autodenominarse "Alteza Serenísima". Un plan para envenenar a Hidalgo fue cuando Allende repartió tres dosis de veneno, que jamás llegaron a la boca del Cura Hidalgo porque siempre estaba bien protegido.
+      </li>
+    </ul>
+
+    <div class="contenedor-imagen">
+      <img src="img15.png" alt="Estandarte Virgen de Guadalupe" class="imagen-estandarte">
+    </div>
+  </main>
+
+  <!-- Imagen Esquina Inferior Izquierda -->
+  <img src="img10.png" alt="Decoración Cempasúchil Inferior" class="decoracion-inferior-izquierda">
+
+  <footer class="footer-rojo">
+    <p>Lia Natalia Bretado Quiroz</p>
+    <p>24308051281111</p>
+    <p>5to J</p>
+    <p>Programacion</p>
+  </footer>
+
+</body>
+</html>

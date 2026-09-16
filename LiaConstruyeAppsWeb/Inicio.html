@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Independencia de México</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'Some Time Later';
+      src: url('https://cdn.jsdelivr.net/gh/skateto/sponge-bob-font@master/some_time_later.otf') format('opentype'),
+           url('https://raw.githubusercontent.com/ctrlcctrlv/some-time-later/master/Some%20Time%20Later.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+    }
+
+    .header-banner {
+      background-color: #9ecc73;
+      height: 22vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .titulo-contenedor {
+      display: flex;
+      flex-direction: column;
+      font-family: 'Some Time Later', sans-serif;
+      line-height: 0.85;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .linea-verde {
+      color: #0c5738;
+      font-size: 7.5vh;
+      letter-spacing: 1px;
+    }
+
+    .linea-roja {
+      color: #d60d00;
+      font-size: 7.8vh;
+      letter-spacing: 1px;
+      align-self: flex-end;
+      margin-right: 20px;
+    }
+
+    .navbar {
+      background-color: #128238;
+      width: 100%;
+      height: 6.5vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .nav-btn {
+      background-color: #9ecc73;
+      color: #000000;
+      border: none;
+      padding: 0.5vh 1.5vw;
+      border-radius: 20px;
+      font-family: 'Comic Neue', 'Comic Sans MS', sans-serif;
+      font-weight: 700;
+      font-size: 2vh;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .seccion-central {
+      height: 61.5vh;
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .bloque-texto {
+      max-width: 45vw;
+      text-align: center;
+      z-index: 2;
+    }
+
+    .texto-introduccion {
+      font-size: 2.7vh;
+      font-weight: 700;
+      font-style: italic;
+      line-height: 1.35;
+      color: #000000;
+    }
+
+    .imagen-luchador {
+      position: absolute;
+      left: -10px;
+      bottom: 0;
+      height: 52vh;
+      width: auto;
+      z-index: 1;
+    }
+
+    .imagen-mariachi {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 48vh;
+      width: auto;
+      z-index: 1;
+    }
+
+    .footer-rojo {
+      background-color: #d60d00;
+      color: #ffffff;
+      text-align: center;
+      height: 10vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      z-index: 10;
+    }
+
+    .footer-rojo p {
+      margin: 1px 0;
+      font-size: 1.5vh;
+      font-weight: 700;
+      font-family: 'Comic Neue', 'Comic Sans MS', sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header-banner">
+    <div class="titulo-contenedor">
+      <span class="linea-verde">¡iNDEPENDENCiA</span>
+      <span class="linea-roja">DE MEXiCO</span>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <a href="historia.html" class="nav-btn">Historia</a>
+    <a href="personajes.html" class="nav-btn">Personajes</a>
+    <a href="documentos-historicos.html" class="nav-btn">Documentos Históricos</a>
+    <a href="linea-del-tiempo.html" class="nav-btn">Línea del tiempo</a>
+    <a href="datos-curiosos.html" class="nav-btn">Datos Curiosos / Interesantes</a>
+  </nav>
+
+  <main class="seccion-central">
+    <img src="img2.png" alt="Luchador Mexicano" class="imagen-luchador">
+    
+    <div class="bloque-texto">
+      <p class="texto-introduccion">
+        En septiembre de 1810, el eco de una campana marcó el inicio de un movimiento que cambiaría el destino de toda una nación. Acompaña a héroes y heroínas en la gesta heroica que dio origen al México independiente. Explora los pasajes históricos, descubre documentos fundamentales y revive los momentos de valentía, sacrificio y esperanza que nos dieron patria e identidad.
+      </p>
+    </div>
+
+    <img src="img1.png" alt="Mariachi Mexicano" class="imagen-mariachi">
+  </main>
+
+  <footer class="footer-rojo">
+    <p>Lia Natalia Bretado Quiroz</p>
+    <p>24308051281111</p>
+    <p>5to J</p>
+    <p>Programacion</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentos de la Independencia</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'Some Time Later';
+      src: url('https://cdn.jsdelivr.net/gh/skateto/sponge-bob-font@master/some_time_later.otf') format('opentype'),
+           url('https://raw.githubusercontent.com/ctrlcctrlv/some-time-later/master/Some%20Time%20Later.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
+      background-color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* HEADER VERDE CLARO */
+    .header-banner {
+      background-color: #a2d072;
+      position: relative;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .titulo-contenedor {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Some Time Later', sans-serif;
+      line-height: 0.95;
+      text-transform: uppercase;
+      text-align: center;
+      z-index: 2;
+    }
+
+    .linea-blanca {
+      color: #ffffff;
+      font-size: 5rem;
+      letter-spacing: 2px;
+    }
+
+    /* NAVBAR VERDE OSCURO */
+    .navbar {
+      background-color: #128238;
+      width: 100%;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      z-index: 10;
+    }
+
+    .nav-btn {
+      background-color: #9ecc73;
+      color: #000000;
+      border: none;
+      padding: 8px 22px;
+      border-radius: 20px;
+      font-family: 'Comic Neue', 'Comic Sans MS', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    /* SECCIÓN PRINCIPAL DE DOCUMENTOS */
+    .contenedor-documentos {
+      max-width: 1100px;
+      margin: 50px auto 80px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* FILAS DE CONTENIDO (TEXTO E IMAGEN) */
+    .fila-documento {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .contenido-texto {
+      flex: 1;
+    }
+
+    .titulo-documento {
+      color: #12572b;
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .texto-documento {
+      font-size: 1.15rem;
+      color: #333333;
+      line-height: 1.5;
+      text-align: justify;
+    }
+
+    .contenedor-imagen {
+      flex: 0 0 350px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .imagen-doc {
+      max-width: 100%;
+      height: auto;
+      max-height: 320px;
+      object-fit: contain;
+    }
+
+    /* DECORACIÓN ESQUINA INFERIOR IZQUIERDA (img10.png) */
+    .decoracion-inferior-izquierda {
+      position: absolute;
+      bottom: 50px;
+      left: 0;
+      width: 280px;
+      height: auto;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    /* FOOTER ROJO */
+    .footer-rojo {
+      background-color: #d60d00;
+      color: #ffffff;
+      text-align: center;
+      padding: 12px 10px;
+      width: 100%;
+      z-index: 10;
+      margin-top: auto;
+    }
+
+    .footer-rojo p {
+      margin: 2px 0;
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header-banner">
+    <div class="titulo-contenedor">
+      <span class="linea-blanca">DOCUMENTOS DE LA</span>
+      <span class="linea-blanca">iNDEPENDENCiA</span>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <a href="inicio.html" class="nav-btn">inicio</a>
+    <a href="historia.html" class="nav-btn">Historia</a>
+    <a href="personajes.html" class="nav-btn">Personajes</a>
+    <a href="documentos-historicos.html" class="nav-btn">Documentos Históricos</a>
+    <a href="linea-del-tiempo.html" class="nav-btn">Línea del tiempo</a>
+    <a href="datos-curiosos.html" class="nav-btn">Datos Curiosos / Interesantes</a>
+  </nav>
+
+  <main class="contenedor-documentos">
+
+    <!-- 1. Acta de Independencia (Texto Izquierda, Imagen Derecha) -->
+    <section class="fila-documento">
+      <div class="contenido-texto">
+        <h2 class="titulo-documento">Acta de Independencia del Imperio Mexicano</h2>
+        <p class="texto-documento">
+          El Acta de Independencia, redactada el 28 de septiembre de 1821 por Juan José Espinosa de los Monteros, es el documento mediante el cual México declaró su independencia de España. Originalmente se hicieron dos ejemplares; uno se destruyó en 1909 y el otro fue recuperado y finalmente entregado al presidente Adolfo López Mateos en 1961. Actualmente se conserva en el Archivo General de la Nación y mide 52.9 por 71.8 centímetros.
+        </p>
+      </div>
+      <div class="contenedor-imagen">
+        <img src="img12.png" alt="Acta de Independencia del Imperio Mexicano" class="imagen-doc">
+      </div>
+    </section>
+
+    <!-- 2. Plan de Iguala (Imagen Izquierda, Texto Derecha) -->
+    <section class="fila-documento">
+      <div class="contenedor-imagen">
+        <img src="img13.png" alt="Plan de Iguala" class="imagen-doc">
+      </div>
+      <div class="contenido-texto">
+        <h2 class="titulo-documento">Plan de Iguala (1821)</h2>
+        <p class="texto-documento">
+          Este plan estableció las bases para la independencia, incluyendo la creación del Ejército Trigarante, la protección de la religión católica y la independencia bajo la tutela de la Corona española. Fue un documento clave que permitió la unión de insurgentes y realistas moderados para consumar la independencia.
+        </p>
+      </div>
+    </section>
+
+    <!-- 3. Documentos de los insurgentes (Texto Izquierda, Imagen Derecha) -->
+    <section class="fila-documento">
+      <div class="contenido-texto">
+        <h2 class="titulo-documento">Documentos de los insurgentes</h2>
+        <p class="texto-documento">
+          Cartas, proclamas y periódicos como El Despertador Americano reflejan la organización y difusión de la rebelión iniciada por el cura Hidalgo, Ignacio Allende y Juan Aldama desde 1810. Estos documentos muestran la estrategia militar, la movilización de tropas y la comunicación con aliados externos.
+        </p>
+      </div>
+      <div class="contenedor-imagen">
+        <img src="img14.png" alt="Documentos de los insurgentes" class="imagen-doc">
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Imagen Esquina Inferior Izquierda -->
+  <img src="img10.png" alt="Decoración Cempasúchil Inferior" class="decoracion-inferior-izquierda">
+
+  <footer class="footer-rojo">
+    <p>Lia Natalia Bretado Quiroz</p>
+    <p>24308051281111</p>
+    <p>5to J</p>
+    <p>Programacion</p>
+  </footer>
+
+</body>
+</html>
