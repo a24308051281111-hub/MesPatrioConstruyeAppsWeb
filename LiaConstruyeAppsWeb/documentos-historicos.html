@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
+    /* font utilizada en el titulo */
     @font-face {
       font-family: 'Some Time Later';
       src: url('https://cdn.jsdelivr.net/gh/skateto/sponge-bob-font@master/some_time_later.otf') format('opentype'),
@@ -25,6 +26,7 @@
     }
 
     body {
+      /* font utilizada en el cuerpo de la pagina */
       font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
       background-color: #ffffff;
       min-height: 100vh;
@@ -34,7 +36,7 @@
       position: relative;
     }
 
-    /* HEADER VERDE CLARO */
+    /* encadezado de color verde pastel */
     .header-banner {
       background-color: #a2d072;
       position: relative;
@@ -62,7 +64,7 @@
       letter-spacing: 2px;
     }
 
-    /* NAVBAR VERDE OSCURO */
+    /* barra de navegacion verde oscuro */
     .navbar {
       background-color: #128238;
       width: 100%;
@@ -86,8 +88,6 @@
       text-decoration: none;
       display: inline-block;
     }
-
-    /* SECCIÓN PRINCIPAL DE DOCUMENTOS */
     .contenedor-documentos {
       max-width: 1100px;
       margin: 50px auto 80px auto;
@@ -99,7 +99,7 @@
       z-index: 2;
     }
 
-    /* FILAS DE CONTENIDO (TEXTO E IMAGEN) */
+    /* texto e imagenes*/
     .fila-documento {
       display: flex;
       align-items: center;
@@ -138,7 +138,7 @@
       object-fit: contain;
     }
 
-    /* DECORACIÓN ESQUINA INFERIOR IZQUIERDA (img10.png) */
+    /* decoracion de la esquina*/
     .decoracion-inferior-izquierda {
       position: absolute;
       bottom: 50px;
@@ -149,7 +149,7 @@
       pointer-events: none;
     }
 
-    /* FOOTER ROJO */
+    /* pie de pagina de color rojo*/
     .footer-rojo {
       background-color: #d60d00;
       color: #ffffff;
@@ -171,11 +171,12 @@
 
   <header class="header-banner">
     <div class="titulo-contenedor">
+      /* titulo */
       <span class="linea-blanca">DOCUMENTOS DE LA</span>
       <span class="linea-blanca">iNDEPENDENCiA</span>
     </div>
   </header>
-
+      /* barra de navegacion */
   <nav class="navbar">
     <a href="inicio.html" class="nav-btn">inicio</a>
     <a href="historia.html" class="nav-btn">Historia</a>
@@ -187,7 +188,7 @@
 
   <main class="contenedor-documentos">
 
-    <!-- 1. Acta de Independencia (Texto Izquierda, Imagen Derecha) -->
+    <!-- Acta de independencia, informacion e imagen, con texto hacia la izquierda -->
     <section class="fila-documento">
       <div class="contenido-texto">
         <h2 class="titulo-documento">Acta de Independencia del Imperio Mexicano</h2>
@@ -200,7 +201,7 @@
       </div>
     </section>
 
-    <!-- 2. Plan de Iguala (Imagen Izquierda, Texto Derecha) -->
+    <!-- 2. Plan de iguala, informacion e imagen, con texto hacia la derecha) -->
     <section class="fila-documento">
       <div class="contenedor-imagen">
         <img src="img13.png" alt="Plan de Iguala" class="imagen-doc">
@@ -213,7 +214,7 @@
       </div>
     </section>
 
-    <!-- 3. Documentos de los insurgentes (Texto Izquierda, Imagen Derecha) -->
+    <!-- 3. Documentos de los insurgentes, informacion e imagen, con texto hacia la izquierda) -->
     <section class="fila-documento">
       <div class="contenido-texto">
         <h2 class="titulo-documento">Documentos de los insurgentes</h2>
@@ -228,9 +229,9 @@
 
   </main>
 
-  <!-- Imagen Esquina Inferior Izquierda -->
+  <!-- imagen de decoracion en la esquina -->
   <img src="img10.png" alt="Decoración Cempasúchil Inferior" class="decoracion-inferior-izquierda">
-
+  <!-- pie de pagina  -->
   <footer class="footer-rojo">
     <p>Lia Natalia Bretado Quiroz</p>
     <p>24308051281111</p>
