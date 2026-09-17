@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titulo -->
   <title>Datos Interesantes de Independencia</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
+       /* font del titulo */
     @font-face {
       font-family: 'Some Time Later';
       src: url('https://cdn.jsdelivr.net/gh/skateto/sponge-bob-font@master/some_time_later.otf') format('opentype'),
@@ -25,6 +27,7 @@
     }
 
     body {
+     /* font del cuerpo */
       font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
       background-color: #ffffff;
       min-height: 100vh;
@@ -34,7 +37,7 @@
       position: relative;
     }
 
-    /* HEADER VERDE CLARO */
+    /* encabezado verde pastel */
     .header-banner {
       background-color: #a2d072;
       position: relative;
@@ -44,7 +47,7 @@
       align-items: center;
       justify-content: center;
     }
-
+  /*centrar y darle formato al texto del título principal*/
     .titulo-contenedor {
       display: flex;
       flex-direction: column;
@@ -62,7 +65,7 @@
       letter-spacing: 2px;
     }
 
-    /* NAVBAR VERDE OSCURO */
+    /* barra de navegacion verde oscuro */
     .navbar {
       background-color: #128238;
       width: 100%;
@@ -72,7 +75,7 @@
       gap: 15px;
       z-index: 10;
     }
-
+    /*botones de la barra*/
     .nav-btn {
       background-color: #9ecc73;
       color: #000000;
@@ -87,7 +90,7 @@
       display: inline-block;
     }
 
-    /* SECCIÓN PRINCIPAL DE DATOS INTERESANTES */
+    /* seccion de datos interesantes */
     .contenedor-datos {
       max-width: 1200px;
       margin: 50px auto 60px auto;
@@ -131,7 +134,7 @@
       object-fit: contain;
     }
 
-    /* DECORACIÓN ESQUINA INFERIOR IZQUIERDA (img10.png) */
+    /* decoracion de la esquina */
     .decoracion-inferior-izquierda {
       position: absolute;
       bottom: 50px;
@@ -142,7 +145,7 @@
       pointer-events: none;
     }
 
-    /* FOOTER ROJO */
+    /* pie de pagina color rojo */
     .footer-rojo {
       background-color: #d60d00;
       color: #ffffff;
@@ -161,14 +164,14 @@
   </style>
 </head>
 <body>
-
+  <!-- encabezado -->
   <header class="header-banner">
     <div class="titulo-contenedor">
       <span class="linea-blanca">DATOS iNTERESANTES DE</span>
       <span class="linea-blanca">iNDEPENDENCiA</span>
     </div>
   </header>
-
+  <!-- barra de navegacion -->
   <nav class="navbar">
     <a href="inicio.html" class="nav-btn">inicio</a>
     <a href="historia.html" class="nav-btn">Historia</a>
@@ -177,7 +180,7 @@
     <a href="linea-del-tiempo.html" class="nav-btn">Línea del tiempo</a>
     <a href="datos-curiosos.html" class="nav-btn">Datos Curiosos / Interesantes</a>
   </nav>
-
+  <!-- lista de datos interesantes o curiosos -->
   <main class="contenedor-datos">
     <ul class="lista-datos">
       <li>
@@ -196,13 +199,13 @@
         Ignacio Allende trató de envenenar a Miguel Hidalgo en varias ocasiones, después de negarse a tomar la Ciudad de México y autodenominarse "Alteza Serenísima". Un plan para envenenar a Hidalgo fue cuando Allende repartió tres dosis de veneno, que jamás llegaron a la boca del Cura Hidalgo porque siempre estaba bien protegido.
       </li>
     </ul>
-
+  <!-- imagen de decoracion del estanarte de la virgen -->
     <div class="contenedor-imagen">
       <img src="img15.png" alt="Estandarte Virgen de Guadalupe" class="imagen-estandarte">
     </div>
   </main>
 
-  <!-- Imagen Esquina Inferior Izquierda -->
+  <!-- Imagen de la esquina izquierda -->
   <img src="img10.png" alt="Decoración Cempasúchil Inferior" class="decoracion-inferior-izquierda">
 
   <footer class="footer-rojo">
