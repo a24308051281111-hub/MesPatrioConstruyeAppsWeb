@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- titulo de la pestaña -->
   <title>Independencia de México</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,8 +11,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
 
   <style>
+    /* font del titulo */
     @font-face {
-      /* font del titulo */
       font-family: 'Some Time Later';
       src: url('https://cdn.jsdelivr.net/gh/skateto/sponge-bob-font@master/some_time_later.otf') format('opentype'),
            url('https://raw.githubusercontent.com/ctrlcctrlv/some-time-later/master/Some%20Time%20Later.otf') format('opentype');
@@ -25,6 +26,7 @@
       padding: 0;
     }
 
+    /* configuracion para pantalla completa sin scroll */
     html, body {
       height: 100vh;
       width: 100vw;
@@ -38,6 +40,7 @@
       background-color: #ffffff;
     }
 
+    /* encabezado verde claro */
     .header-banner {
       background-color: #9ecc73;
       height: 22vh;
@@ -47,6 +50,7 @@
       justify-content: center;
     }
 
+    /* formato del texto del titulo principal */
     .titulo-contenedor {
       display: flex;
       flex-direction: column;
@@ -70,6 +74,7 @@
       margin-right: 20px;
     }
 
+    /* barra de navegacion verde oscuro */
     .navbar {
       background-color: #128238;
       width: 100%;
@@ -80,6 +85,7 @@
       gap: 15px;
     }
 
+    /* botones de la barra de navegacion */
     .nav-btn {
       background-color: #9ecc73;
       color: #000000;
@@ -94,6 +100,7 @@
       display: inline-block;
     }
 
+    /* contenedor de la seccion central de bienvenida */
     .seccion-central {
       height: 61.5vh;
       position: relative;
@@ -104,6 +111,7 @@
       overflow: hidden;
     }
 
+    /* texto introductivo centrado */
     .bloque-texto {
       max-width: 45vw;
       text-align: center;
@@ -118,6 +126,7 @@
       color: #000000;
     }
 
+    /* ilustraciones laterales de decoracion */
     .imagen-luchador {
       position: absolute;
       left: -10px;
@@ -136,6 +145,7 @@
       z-index: 1;
     }
 
+    /* pie de pagina color rojo */
     .footer-rojo {
       background-color: #d60d00;
       color: #ffffff;
@@ -159,6 +169,7 @@
 </head>
 <body>
 
+  <!-- encabezado -->
   <header class="header-banner">
     <div class="titulo-contenedor">
       <span class="linea-verde">¡iNDEPENDENCiA</span>
@@ -166,6 +177,7 @@
     </div>
   </header>
 
+  <!-- barra de navegacion -->
   <nav class="navbar">
     <a href="historia.html" class="nav-btn">Historia</a>
     <a href="personajes.html" class="nav-btn">Personajes</a>
@@ -174,18 +186,23 @@
     <a href="datos-curiosos.html" class="nav-btn">Datos Curiosos / Interesantes</a>
   </nav>
 
+  <!-- seccion principal de bienvenida -->
   <main class="seccion-central">
+    <!-- imagen decorativa izquierda -->
     <img src="img2.png" alt="Luchador Mexicano" class="imagen-luchador">
     
+    <!-- texto principal de introduccion -->
     <div class="bloque-texto">
       <p class="texto-introduccion">
         En septiembre de 1810, el eco de una campana marcó el inicio de un movimiento que cambiaría el destino de toda una nación. Acompaña a héroes y heroínas en la gesta heroica que dio origen al México independiente. Explora los pasajes históricos, descubre documentos fundamentales y revive los momentos de valentía, sacrificio y esperanza que nos dieron patria e identidad.
       </p>
     </div>
 
+    <!-- imagen decorativa derecha -->
     <img src="img1.png" alt="Mariachi Mexicano" class="imagen-mariachi">
   </main>
 
+  <!-- pie de pagina -->
   <footer class="footer-rojo">
     <p>Lia Natalia Bretado Quiroz</p>
     <p>24308051281111</p>
