@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- titulo -->
   <title>Línea del Tiempo - Independencia</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
+    /* font del titulo */
     @font-face {
       font-family: 'Some Time Later';
       src: url('https://cdn.jsdelivr.net/gh/skateto/sponge-bob-font@master/some_time_later.otf') format('opentype'),
@@ -25,6 +27,7 @@
     }
 
     body {
+      /* font del cuerpo */
       font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
       background-color: #ffffff;
       min-height: 100vh;
@@ -34,7 +37,7 @@
       position: relative;
     }
 
-    /* HEADER ROJO CON TÍTULO */
+    /* encabezado rojo */
     .header-banner {
       background-color: #d60d00;
       position: relative;
@@ -45,6 +48,7 @@
       justify-content: center;
     }
 
+    /*centrar y darle formato al texto del título principal*/
     .titulo-contenedor {
       display: flex;
       flex-direction: column;
@@ -62,7 +66,7 @@
       letter-spacing: 2px;
     }
 
-    /* DECORACIÓN ESQUINA SUPERIOR DERECHA */
+    /* decoracion de la esquina superior */
     .decoracion-superior-derecha {
       position: absolute;
       top: 0;
@@ -73,7 +77,7 @@
       pointer-events: none;
     }
 
-    /* NAVBAR VERDE */
+    /* barra de navegacion verde oscuro */
     .navbar {
       background-color: #128238;
       width: 100%;
@@ -84,6 +88,7 @@
       z-index: 10;
     }
 
+    /*botones de la barra*/
     .nav-btn {
       background-color: #9ecc73;
       color: #000000;
@@ -98,7 +103,7 @@
       display: inline-block;
     }
 
-    /* SECCIÓN LÍNEA DEL TIEMPO */
+    /* seccion de linea del tiempo */
     .contenedor-timeline {
       max-width: 1280px;
       margin: 60px auto;
@@ -107,7 +112,6 @@
       z-index: 2;
     }
 
-    /* LÍNEA HORIZONTAL CONECTORA DE AÑOS */
     .eje-cronologico {
       position: relative;
       display: grid;
@@ -128,7 +132,6 @@
       z-index: 1;
     }
 
-    /* BOTONES DE AÑOS Y FASES */
     .capsula-roja {
       background-color: #d60d00;
       color: #ffffff;
@@ -153,7 +156,6 @@
       z-index: 2;
     }
 
-    /* REJILLA DE TARJETAS DE CONTENIDO */
     .grid-tarjetas {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -185,14 +187,13 @@
       min-height: 340px;
     }
 
-    /* REJILLA DE NOMBRES DE ETAPAS (INFERIOR) */
     .grid-etapas {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
     }
 
-    /* DECORACIÓN ESQUINA INFERIOR IZQUIERDA */
+    /* decoracion de la esquina */
     .decoracion-inferior-izquierda {
       position: absolute;
       bottom: 50px;
@@ -203,7 +204,7 @@
       pointer-events: none;
     }
 
-    /* FOOTER ROJO */
+    /* pie de pagina color rojo */
     .footer-rojo {
       background-color: #d60d00;
       color: #ffffff;
@@ -223,9 +224,10 @@
 </head>
 <body>
 
-  <!-- Imagen Esquina Superior Derecha -->
+  <!-- decoracion tricolor superior -->
   <img src="img11.png" alt="Decoración Tricolor Superior" class="decoracion-superior-derecha">
 
+  <!-- encabezado -->
   <header class="header-banner">
     <div class="titulo-contenedor">
       <span class="linea-blanca">LiNEA</span>
@@ -233,6 +235,7 @@
     </div>
   </header>
 
+  <!-- barra de navegacion -->
   <nav class="navbar">
     <a href="inicio.html" class="nav-btn">inicio</a>
     <a href="historia.html" class="nav-btn">Historia</a>
@@ -242,9 +245,9 @@
     <a href="datos-curiosos.html" class="nav-btn">Datos Curiosos / Interesantes</a>
   </nav>
 
+  <!-- linea del tiempo -->
   <main class="contenedor-timeline">
 
-    <!-- Fila 1: Fechas con línea conectora -->
     <div class="eje-cronologico">
       <div class="capsula-roja">1810–1811</div>
       <div class="capsula-verde">1811–1815</div>
@@ -252,7 +255,6 @@
       <div class="capsula-verde">1820–1821</div>
     </div>
 
-    <!-- Fila 2: Cuadros de texto principales -->
     <div class="grid-tarjetas">
       <div class="tarjeta-roja">
         Iniciada con el Grito de Dolores, esta etapa estuvo marcada por la movilización de los insurgentes liderados por Hidalgo y posteriormente por Morelos. Incluyó diversas batallas importantes, aunque concluyó con el fracaso del movimiento inicial tras la captura y ejecución de Hidalgo.
@@ -271,7 +273,6 @@
       </div>
     </div>
 
-    <!-- Fila 3: Títulos de cada etapa -->
     <div class="grid-etapas">
       <div class="capsula-roja">Fase inicial</div>
       <div class="capsula-verde">La etapa de Morelos</div>
@@ -281,7 +282,7 @@
 
   </main>
 
-  <!-- Imagen Esquina Inferior Izquierda -->
+  <!-- decoracion cempasuchil inferior -->
   <img src="img10.png" alt="Decoración Cempasúchil Inferior" class="decoracion-inferior-izquierda">
 
   <footer class="footer-rojo">
