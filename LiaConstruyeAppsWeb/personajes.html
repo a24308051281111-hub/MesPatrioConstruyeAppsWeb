@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- titulo -->
   <title>Personajes Ilustres</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
+    /* font del titulo */
     @font-face {
       font-family: 'Some Time Later';
       src: url('https://cdn.jsdelivr.net/gh/skateto/sponge-bob-font@master/some_time_later.otf') format('opentype'),
@@ -25,6 +27,7 @@
     }
 
     body {
+      /* font del cuerpo */
       font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
       background-color: #ffffff;
       min-height: 100vh;
@@ -34,7 +37,7 @@
       position: relative;
     }
 
-    /* HEADER ROJO CON TÍTULO */
+    /* encabezado rojo */
     .header-banner {
       background-color: #d60d00;
       position: relative;
@@ -45,6 +48,7 @@
       justify-content: center;
     }
 
+    /*centrar y darle formato al texto del título principal*/
     .titulo-contenedor {
       display: flex;
       flex-direction: column;
@@ -62,7 +66,7 @@
       letter-spacing: 2px;
     }
 
-    /* DECORACIÓN ESQUINA SUPERIOR DERECHA (img11.png) */
+    /* decoracion de la esquina superior */
     .decoracion-superior-derecha {
       position: absolute;
       top: 0;
@@ -73,7 +77,7 @@
       pointer-events: none;
     }
 
-    /* NAVBAR VERDE */
+    /* barra de navegacion verde oscuro */
     .navbar {
       background-color: #128238;
       width: 100%;
@@ -84,6 +88,7 @@
       z-index: 10;
     }
 
+    /*botones de la barra*/
     .nav-btn {
       background-color: #9ecc73;
       color: #000000;
@@ -98,7 +103,7 @@
       display: inline-block;
     }
 
-    /* SECCIÓN PRINCIPAL DE TARJETAS */
+    /* seccion principal de personajes */
     .contenedor-personajes {
       max-width: 1250px;
       margin: 50px auto 40px auto;
@@ -152,7 +157,7 @@
       object-fit: contain;
     }
 
-    /* DECORACIÓN ESQUINA INFERIOR IZQUIERDA (img10.png) */
+    /* decoracion de la esquina */
     .decoracion-inferior-izquierda {
       position: absolute;
       bottom: 60px;
@@ -163,7 +168,7 @@
       pointer-events: none;
     }
 
-    /* FOOTER ROJO */
+    /* pie de pagina color rojo */
     .footer-rojo {
       background-color: #d60d00;
       color: #ffffff;
@@ -183,9 +188,10 @@
 </head>
 <body>
 
-  <!-- Imagen Esquina Superior Derecha -->
+  <!-- decoracion tricolor superior -->
   <img src="img11.png" alt="Decoración Tricolor Superior" class="decoracion-superior-derecha">
 
+  <!-- encabezado -->
   <header class="header-banner">
     <div class="titulo-contenedor">
       <span class="linea-blanca">PERSONAJES</span>
@@ -193,6 +199,7 @@
     </div>
   </header>
 
+  <!-- barra de navegacion -->
   <nav class="navbar">
     <a href="inicio.html" class="nav-btn">inicio</a>
     <a href="historia.html" class="nav-btn">Historia</a>
@@ -202,9 +209,10 @@
     <a href="datos-curiosos.html" class="nav-btn">Datos Curiosos / Interesantes</a>
   </nav>
 
+  <!-- tarjetas de personajes -->
   <main class="contenedor-personajes">
 
-    <!-- 1. Miguel Hidalgo -->
+    <!-- 1. miguel hidalgo -->
     <div class="tarjeta-personaje">
       <h2 class="titulo-tarjeta">Miguel Hidalgo</h2>
       <p class="texto-tarjeta">
@@ -213,7 +221,7 @@
       <img src="img4.png" alt="Miguel Hidalgo" class="imagen-personaje">
     </div>
 
-    <!-- 2. José María Morelos -->
+    <!-- 2. jose maria morelos -->
     <div class="tarjeta-personaje">
       <h2 class="titulo-tarjeta">José María Morelos y Pavón</h2>
       <p class="texto-tarjeta">
@@ -222,7 +230,7 @@
       <img src="img5.png" alt="José María Morelos y Pavón" class="imagen-personaje">
     </div>
 
-    <!-- 3. Guadalupe Victoria -->
+    <!-- 3. guadalupe victoria -->
     <div class="tarjeta-personaje">
       <h2 class="titulo-tarjeta">Guadalupe Victoria</h2>
       <p class="texto-tarjeta">
@@ -231,7 +239,7 @@
       <img src="img6.png" alt="Guadalupe Victoria" class="imagen-personaje">
     </div>
 
-    <!-- 4. Ignacio Allende -->
+    <!-- 4. ignacio allende -->
     <div class="tarjeta-personaje">
       <h2 class="titulo-tarjeta">Ignacio Allende y Unzaga</h2>
       <p class="texto-tarjeta">
@@ -240,7 +248,7 @@
       <img src="img7.png" alt="Ignacio Allende y Unzaga" class="imagen-personaje">
     </div>
 
-    <!-- 5. Agustín de Iturbide -->
+    <!-- 5. agustin de iturbide -->
     <div class="tarjeta-personaje">
       <h2 class="titulo-tarjeta">Agustín de Iturbide</h2>
       <p class="texto-tarjeta">
@@ -249,7 +257,7 @@
       <img src="img8.png" alt="Agustín de Iturbide" class="imagen-personaje">
     </div>
 
-    <!-- 6. Josefa Ortiz -->
+    <!-- 6. josefa ortiz -->
     <div class="tarjeta-personaje">
       <h2 class="titulo-tarjeta">Josefa Ortiz</h2>
       <p class="texto-tarjeta">
@@ -260,7 +268,7 @@
 
   </main>
 
-  <!-- Imagen Esquina Inferior Izquierda -->
+  <!-- decoracion cempasuchil inferior -->
   <img src="img10.png" alt="Decoración Cempasúchil Inferior" class="decoracion-inferior-izquierda">
 
   <footer class="footer-rojo">
